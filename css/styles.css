@@ -25,7 +25,6 @@ body {
 .navigation-menu {
   display: flex;
   width: 254px;
-  margin-bottom: 32px;
   margin-left: 93px;
 }
 
@@ -35,21 +34,19 @@ body {
 
 .contact-header-1 {
   margin-left: 371px;
-  margin-top: 32px;
   width: 135px;
-  margin-bottom: 32px;
 }
 
 .contact-header-2 {
   margin-left: 50px;
-  margin-top: 32px;
   width: 110px;
-  margin-bottom: 32px;
 }
 
 .header-container {
   display: flex;
   align-items: baseline;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 header {
@@ -63,9 +60,7 @@ header {
   font-size: 26px;
   line-height: 1.19;
   font-family: 'Raleway';
-  margin-top: 24px;
   width: 145px;
-  margin-bottom: 25px;
 }
 
 .logo-header:hover {
@@ -172,13 +167,18 @@ header {
   font-size: 44px;
   line-height: 1.36;
   color: var(--secondary-color);
-  margin-top: 200px;
-  margin-left: 252px;
+  margin: 0 auto;
   width: 696px;
   text-align: center;
 }
 
+.title-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .title-button {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.86;
@@ -186,10 +186,9 @@ header {
   background-color: var(--secondary-background-color);
   border-radius: 4px;
   width: 200px;
+  margin: 0 auto;
   margin-top: 30px;
-  margin-left: 500px;
   padding: 10px 42px;
-  margin-bottom: 200px;
 }
 
 .title-button:hover {
@@ -233,7 +232,6 @@ header {
   display: flex;
   margin-top: 50px;
   width: 1170px;
-  margin-left: 15px;
 }
 
 .descryption-photo-item {
@@ -250,8 +248,16 @@ header {
 
 .team-member {
   background-color: var(--secondary-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
   width: 270px;
+  margin: 0;
+}
+
+.team-list > .team-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .name {
@@ -286,6 +292,24 @@ header {
   cursor: pointer;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
+  padding: 6px 22px;
+}
+
+.category-browser-list {
+  display: flex;
+  justify-content: center;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
+  width: 1170;
+}
+
+.category-browser-list > .category-list-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .list-button:hover {
@@ -298,25 +322,36 @@ header {
   color: var(--secondary-color);
 }
 
-.list-item {
-  border: 1px solid #eeeeee;
-}
-
 .cell-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 }
 
+.category-list-descryption {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
 .category {
   font-size: 16px;
   line-height: 1.86;
   color: var(--secondary-text-color);
+  margin-top: 4px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section {
@@ -327,7 +362,6 @@ header {
 .primary-list {
   display: flex;
   width: 1170px;
-  margin-left: 15px;
 }
 
 .primary-list > .primary-list-item:not(:last-child) {
