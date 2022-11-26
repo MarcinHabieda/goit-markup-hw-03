@@ -216,3 +216,8 @@ body {
   line-height: 1.86;
   color: var(--secondary-text-color);
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
